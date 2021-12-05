@@ -1,12 +1,13 @@
 # PREPARATIONS
-
-# libraries
-from augmentations import get_augs
-from model import get_model
 import gc
 import pickle
 import os
 import sys
+# custom libraries
+sys.path.append('code')
+# libraries
+from augmentations import get_augs
+from model import get_model
 import urllib.request
 import requests
 import numpy as np
@@ -17,8 +18,7 @@ import cv2
 import torch
 from scipy.stats import percentileofscore
 
-# custom libraries
-sys.path.append('code')
+
 
 # download with progress bar
 mybar = None
@@ -244,7 +244,7 @@ st.header("Contact")
 st.write("Check out [my website](https://gusevski.com).")
 
 # profile links
-st.write("[![Twitter](https://img.shields.io/badge/-Twitter-4B9AE5?style=flat&logo=Twitter&logoColor=white&link=https://www.twitter.com/daily_sergey)](https://www.twitter.com/daily_sergey) [![Kaggle](https://img.shields.io/badge/-Kaggle-5DB0DB?style=flat&logo=Kaggle&logoColor=white&link=https://www.kaggle.com/dailysergey)](https://www.kaggle.com/dailysergey) [![GitHub](https://img.shields.io/badge/-GitHub-2F2F2F?style=flat&logo=github&logoColor=white&link=https://www.github.com/dailysergey)](https://www.github.com/dailysergey)  [![Coffee](https://img.shields.io/badge/-Buy_me_a_cofee-yellow?style=flat&logo=buymeacoffee&link=https://www.buymeacoffee.com/gusevski)](https://www.buymeacoffee.com/gusevski)")
+st.write("[![Twitter](https://img.shields.io/badge/-Twitter-4B9AE5?style=flat&logo=Twitter&logoColor=white&link=https://www.twitter.com/daily_sergey)](https://www.twitter.com/daily_sergey) [![Kaggle](https://img.shields.io/badge/-Kaggle-5DB0DB?style=flat&logo=Kaggle&logoColor=white&link=https://www.kaggle.com/dailysergey)](https://www.kaggle.com/dailysergey) [![GitHub](https://img.shields.io/badge/-GitHub-2F2F2F?style=flat&logo=github&logoColor=white&link=https://www.github.com/dailysergey)](https://www.github.com/dailysergey)  [![Coffee](https://img.shields.io/badge/-Buy_me_a_tea-yellow?style=flat&logo=buymeacoffee&logoColor=white&link=https://www.buymeacoffee.com/gusevski)](https://www.buymeacoffee.com/gusevski)")
 
 # copyright
 st.text("© 2021 Sergey Guskov")
